@@ -1,0 +1,16 @@
+[package]
+
+build = "build.rs"
+
+name = "kafka-prod"
+version = "0.1.0"
+authors = ["Roland Tritsch <roland.tritsch@gonitro.com>"]
+
+[dependencies]
+
+kafka ="*"
+
+[[bin]]
+
+name = "prod"
+path = "src/prod.rs"
