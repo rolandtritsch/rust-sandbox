@@ -2,7 +2,7 @@
 
 name = "hello"
 version = "0.0.1"
-authors = [ "roland.tritsch@gonitro.com" ]
+authors = [ "roland@tritsch.org" ]
 
 [[bin]]
 
