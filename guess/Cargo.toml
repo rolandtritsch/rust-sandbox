@@ -1,0 +1,11 @@
+[package]
+name = "guess"
+version = "0.1.0"
+authors = ["Roland Tritsch <roland@tritsch.org>"]
+
+[[bin]]
+name = "guess"
+path = "src/guess.rs"
+
+[dependencies]
+rand = "*"
