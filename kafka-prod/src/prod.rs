@@ -15,7 +15,10 @@ fn main() {
             topic = args[1].to_string();
             message = args[2].to_string();
         }
-        _ => {println!("Usage: prod <topic> <message>"); return}
+        _ => {
+            println!("Usage: prod <topic> <message>");
+            return;
+        }
     }
 
     let mut client = KafkaClient::new(vec!("localhost:9092".to_string()));
