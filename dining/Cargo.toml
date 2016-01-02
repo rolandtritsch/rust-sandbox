@@ -1,0 +1,11 @@
+[package]
+name = "dining"
+version = "0.1.0"
+authors = ["Roland Tritsch <roland@tritsch.org>"]
+
+[[bin]]
+name = "dining"
+path = "src/dining.rs"
+
+[dependencies]
+rand = "*"
