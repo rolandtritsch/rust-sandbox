@@ -1,0 +1,10 @@
+[package]
+name = "iter"
+version = "0.1.0"
+authors = ["Roland Tritsch <roland.tritsch@gonitro.com>"]
+
+[[bin]]
+name = "iter"
+path = "src/iter.rs"
+
+[dependencies]
