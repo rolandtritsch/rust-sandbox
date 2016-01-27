@@ -1,6 +1,7 @@
 /// This function implements a simple for loop.
 fn for_loop() {
-    for _x in 0..10 {
+    let range = 0..10;
+    for _x in range {
         print!(".");
     }
     println!("");
@@ -35,7 +36,7 @@ fn iter_loop2() {
 }
 
 /// This function uses a consumer to build the vector and then iterates over it.
-fn iter_loop3() {
+fn iter_filter() {
     let zero_to_nine = (0..10).collect::<Vec<_>>();
     for n in &zero_to_nine {
         print!("{}", *n);
@@ -67,11 +68,21 @@ fn iter_fold() {
     println!("{}", sum);
 }
 
-/// Main function.
+/// This function maps an iterator (a range) to a new iterator and doubles the numbers
+fn iter_map() {
+    let double = (1..5).map(|x| x * 2);
+    for n in double {
+        print!("{}", n);
+    }
+    println!("");
+}
+
+/// Main function. Calling all the other functions.
 fn main() {
     for_loop();
     iter_loop();
     iter_loop2();
-    iter_loop3();
+    iter_filter();
     iter_fold();
+    iter_map();
 }
