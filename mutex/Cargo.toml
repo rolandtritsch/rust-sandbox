@@ -1,0 +1,10 @@
+[package]
+name = "mutex"
+version = "0.1.0"
+authors = ["Roland Tritsch <roland.tritsch@gonitro.com>"]
+
+[[bin]]
+name = "mutex"
+path = "src/mutex.rs"
+
+[dependencies]
