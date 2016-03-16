@@ -1,0 +1,12 @@
+[package]
+name = "adder"
+version = "0.1.0"
+authors = ["Roland Tritsch <roland@tritsch.org>"]
+
+[dependencies]
+libc = "*"
+
+[lib]
+name = "adder"
+path = "src/adder.rs"
+crate-type = ["dylib"]
