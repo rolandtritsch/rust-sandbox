@@ -18,6 +18,13 @@ pub type JNIEnv = *const JNINativeInterface;
 #[allow(non_snake_case)]
 #[allow(unused_variables)]
 pub extern fn Java_Adder_add(jre: *mut JNIEnv, class: *const c_void, v1: c_int, v2: c_int) -> c_int {
+    Java_Adder_00024_add(jre, class, v1, v2)
+}
+
+#[no_mangle]
+#[allow(non_snake_case)]
+#[allow(unused_variables)]
+pub extern fn Java_Adder_00024_add(jre: *mut JNIEnv, class: *const c_void, v1: c_int, v2: c_int) -> c_int {
     v1 + v2
 }
 

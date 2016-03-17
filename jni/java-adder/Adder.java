@@ -19,6 +19,5 @@ class Adder {
 	int y = Integer.parseInt(args[1]);
 
 	System.out.println(x + " + " + y + " = " + Adder.add(x, y));
-	System.exit(0);
     }
 }
