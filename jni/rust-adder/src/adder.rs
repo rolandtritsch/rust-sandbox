@@ -30,8 +30,11 @@ pub extern fn Java_Adder_00024_add(jre: *mut JNIEnv, class: *const c_void, v1: c
 
 #[cfg(test)]
 mod test {
+    use std::ptr;
+    use ::Java_Adder_add;
+
     #[test]
     fn add_test() {
-        assert_eq(10, add(null, null, 8, 2))
+        assert_eq!(10, Java_Adder_add(ptr::null_mut(), ptr::null(), 8, 2));
     }
 }
