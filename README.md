@@ -10,3 +10,4 @@ For the jni example ...
 
 * ... you need to install scala or sbt (recommended: `brew install sbt`)
 * ... you need to go to `rust-adder` and need to run `cargo build`. You can then run `javac Adder.java && java Adder 1 2` from java-adder and `sbt "run 1 2"` from scala-adder
+* ... you need to go to `rust-matmul` and need to run `cargo test -- --nocapture`. You can then run `sbt "run 10"` from scala-matmul
