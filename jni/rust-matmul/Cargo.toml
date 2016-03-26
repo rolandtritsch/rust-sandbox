@@ -4,3 +4,10 @@ version = "0.1.0"
 authors = ["Roland Tritsch <roland@tritsch.org>"]
 
 [dependencies]
+libc = "*"
+rand = "*"
+
+[lib]
+name = "matmul"
+path = "src/matmul.rs"
+crate-type = ["dylib"]
